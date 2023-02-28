@@ -26,7 +26,7 @@ cor3 = "#38576b" #Valor
 
 #Janela
 janela = Tk()
-janela.title('Relógio Mundial')
+janela.title('')
 janela.geometry('300x190')
 janela.configure(background=cor3)
 janela.resizable(width=FALSE, height=FALSE)
@@ -111,7 +111,7 @@ def relogio():
     #Passar dados pelas Labels
     l_cidade.config(text=zona)
     l_pais.config(text=nome_do_pais)
-    l_horas.config(text=horas)
+    l_horas.config(text=horas, font=('digital-7 25 bold'))
     l_data.config(text=dia_da_semana + ", "+ "" + str(dia) + " " + str(mes) + " " + (ano) + " " + (periodo))
     l_periodo.config(text=(periodo))
 
